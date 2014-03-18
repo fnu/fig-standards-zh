@@ -1,4 +1,5 @@
 Autoloading Standard
+====================
 
 自动加载标准
 ====================
@@ -9,6 +10,7 @@ to for autoloader interoperability.
 下文描述了若要使用一个通用的自动加载器，你所需要遵守的规范：
 
 Mandatory
+---------
 
 规范
 ---------
@@ -35,6 +37,7 @@ Mandatory
 * 组织名，空间名，类名都由大小写字母组合而成。
 
 Examples
+--------
 
 示例
 --------
@@ -45,6 +48,7 @@ Examples
 * `\Zend\Mail\Message` => `/path/to/project/lib/vendor/Zend/Mail/Message.php`
 
 Underscores in Namespaces and Class Names
+-----------------------------------------
 
 空间名和类名中的下划线
 -----------------------------------------
@@ -61,6 +65,7 @@ implementation which is able to load PHP 5.3 classes.
 你可以利用能够自动加载PHP 5.3类的SplClassLoader来测试你的代码是否符合这些标准。
 
 Example Implementation
+----------------------
 
 实例
 ----------------------
@@ -90,6 +95,7 @@ function autoload($className)
 ```
 
 SplClassLoader Implementation
+-----------------------------
 
 SplClassLoader 实现
 -----------------------------
