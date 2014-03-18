@@ -28,10 +28,10 @@ Mandatory
 * Each `_` character in the CLASS NAME is converted to a
   `DIRECTORY_SEPARATOR`. The `_` character has no special meaning in the
   namespace.
-* 类名中的每个 `_` 都将被转换为一个DIRECTORY_SEPARATOR。下划线_在空间名中没有什么特殊的意义。
+* 类名中的每个 `_` 都将被转换为一个 `DIRECTORY_SEPARATOR`。`_` 在空间名中没有什么特殊的意义。
 * The fully-qualified namespace and class is suffixed with `.php` when
   loading from the file system.
-* 完全标准的命名空间和类从文件系统加载源文件时将会加上.php后缀。
+* 完全标准的命名空间和类从文件系统加载源文件时将会加上 `.php` 后缀。
 * Alphabetic characters in vendor names, namespaces, and class names may
   be of any combination of lower case and upper case.
 * 组织名，空间名，类名都由大小写字母组合而成。
@@ -73,7 +73,7 @@ Example Implementation
 Below is an example function to simply demonstrate how the above
 proposed standards are autoloaded.
 
-下面是一个怎样利用上述标准来实现自动加载的示例函数
+下面是一个怎样利用上述标准来实现自动加载的示例函数。
 
 ```php
 <?php
