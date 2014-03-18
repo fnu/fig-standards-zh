@@ -18,20 +18,26 @@ Mandatory
 * A fully-qualified namespace and class must have the following
   structure `\<Vendor Name>\(<Namespace>\)*<Class Name>`
 * 一个完全标准的命名空间和类的结构是这样的：`\<Vendor Name>\(<Namespace>\)*<Class Name>`
+
 * Each namespace must have a top-level namespace ("Vendor Name").
 * 每个命名空间都必须有一个顶级的空间名("组织名(Vendor Name)")。
+
 * Each namespace can have as many sub-namespaces as it wishes.
 * 每个命名空间中可以根据需要使用任意数量的子命名空间。
+
 * Each namespace separator is converted to a `DIRECTORY_SEPARATOR` when
   loading from the file system.
 * 从文件系统中加载源文件时，命名空间中的分隔符将被转换为 `DIRECTORY_SEPARATOR`。
+
 * Each `_` character in the CLASS NAME is converted to a
   `DIRECTORY_SEPARATOR`. The `_` character has no special meaning in the
   namespace.
 * 类名中的每个 `_` 都将被转换为一个 `DIRECTORY_SEPARATOR`。`_` 在空间名中没有什么特殊的意义。
+
 * The fully-qualified namespace and class is suffixed with `.php` when
   loading from the file system.
 * 完全标准的命名空间和类从文件系统加载源文件时将会加上 `.php` 后缀。
+
 * Alphabetic characters in vendor names, namespaces, and class names may
   be of any combination of lower case and upper case.
 * 组织名，空间名，类名都由大小写字母组合而成。
