@@ -19,7 +19,7 @@ paths. It is fully interoperable, and can be used in addition to any other
 autoloading specification, including [PSR-0][]. This PSR also describes where
 to place files that will be autoloaded according to the specification.
 
-这个 PSR 描述的是通过文件路径 [自动载入][] 类的指南。
+这个 PSR 描述的是通过文件路径 [autoloading][] 类的指南。
 它是完全可互操作的，可以额外使用其它的自动载入规范，
  包括 [PSR-0][] 。这个 PSR 还描述了如何规范存放文件来自动载入。
 
@@ -56,6 +56,7 @@ to place files that will be autoloaded according to the specification.
       qualified class name.
 
     * 下划线在完整的类名任何部分是没有特殊意义。
+    （译者注：这条规则与PSR-0有所不同）
 
     * Alphabetic characters in the fully qualified class name MAY be any
       combination of lower case and upper case.
@@ -77,6 +78,7 @@ to place files that will be autoloaded according to the specification.
 
     * 一个连续的一个或多个主命名空间和子命名空间名称，
       不包括主命名空间分隔符， 在完整的类名（一个“命名空间前缀”）必须对应于至少一个“基本目录”。
+      （译者注：按字面翻译的，这条规则暂时我还没有理解）
 
     * The contiguous sub-namespace names after the "namespace prefix"
       correspond to a subdirectory within a "base directory", in which the
@@ -84,13 +86,13 @@ to place files that will be autoloaded according to the specification.
       name MUST match the case of the sub-namespace names.
 
     * 在“命名空间前缀”后的连续子命名空间名称对应的子目录中的“基本目录”，
-      其中的命名空间分隔符表示目录分隔符；
-      子目录名称必须匹配的子命名空间名称；
+      其中的命名空间分隔符表示目录分隔符，
+      子目录名称必须匹配子命名空间名称。
 
     * The terminating class name corresponds to a file name ending in `.php`.
       The file name MUST match the case of the terminating class name.
 
-    * 最后的类名应该和 `.php` 文件名匹配；文件名的大小写必须匹配；
+    * 最后的类名应该和 `.php` 文件名匹配。文件名的大小写必须匹配；
 
 * Autoloader implementations MUST NOT throw exceptions, MUST NOT raise errors
 of any level, and SHOULD NOT return a value.
