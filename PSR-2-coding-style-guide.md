@@ -921,86 +921,107 @@ determine common practices.  The survey is retained herein for posterity.
 
 `indent_type`:
 The type of indenting. `tab` = "Use a tab", `2` or `4` = "number of spaces"
+
 缩进类型。 `tab` = “使用制表符”，`2` or `4` = “空格数量”
 
 `line_length_limit_soft`:
 The "soft" line length limit, in characters. `?` = not discernible or no response, `no` means no limit.
+
 行长度的“软”限制，用字符。 `?` = 不表示或者数字，`no` 意为不限制。
 
 `line_length_limit_hard`:
 The "hard" line length limit, in characters. `?` = not discernible or no response, `no` means no limit.
+
 行长度的“硬”限制，用字符。 `?` = 不表示或者数字, `no` 意为不限制.
 
 `class_names`:
 How classes are named. `lower` = lowercase only, `lower_under` = lowercase with underscore separators, `studly` = StudlyCase.
+
 类名如何命名 `lower` = 只是小写, `lower_under` = 小写加下划线, `studly` = 骆驼型.
 
 `class_brace_line`:
 Does the opening brace for a class go on the `same` line as the class keyword, or on the `next` line after it?
+
 类的左花括号是放在同一行还是在下一行？
 
 `constant_names`:
 How are class constants named? `upper` = Uppercase with underscore separators.
+
 类常量如何命名？`upper` = 大写加下划线分隔符。
 
 `true_false_null`:
 Are the `true`, `false`, and `null` keywords spelled as all `lower` case, or all `upper` case?
+
 `true`, `false`, 和 `null` 关键字全 `lower` 或者 全 `upper`？
 
 `method_names`:
 How are methods named? `camel` = `camelCase`, `lower_under` = lowercase with underscore separators.
+
 方法名如何命名？camel = 驼峰式, `lower_under` = 小写加下划线分隔符。
 
 `method_brace_line`:
 Does the opening brace for a method go on the `same` line as the method name, or on the `next` line?
+
 方法的左花括号在同一行还是在下一行？
 
 `control_brace_line`:
 Does the opening brace for a control structure go on the `same` line, or on the `next` line?
+
 控制结构的左花括号在同一行还是在下一行？
 
 `control_space_after`:
 Is there a space after the control structure keyword?
+
 控制结构关键词后是否有空格？
 
 `always_use_control_braces`:
 Do control structures always use braces?
+
 控制结构总是使用花括号？
 
 `else_elseif_line`:
 When using `else` or `elseif`, does it go on the `same` line as the previous closing brace, or does it go on the `next` line?
+
 当使用else和elseif，是否放在同一行还是在下一行？
 
 `case_break_indent_from_switch`:
 How many times are `case` and `break` indented from an opening `switch` statement?
+
 case和break分别从swith语句处缩进多少次？
 
 `function_space_after`:
 Do function calls have a space after the function name and before the opening parenthesis?
+
 函数调用的函数名和左括号是否有空格？
 
 `closing_php_tag_required`:
 In files containing only PHP, is the closing `?>` tag required?
+
 如过是纯PHP文件，关闭标签?>是否需要？
 
 `line_endings`:
 What type of line ending is used?
+
 使用何种的行结束符？
 
 `static_or_visibility_first`:
 When declaring a method, does `static` come first, or does the visibility come first?
+
 在定义方法的时候static和可见性谁在前面？
 
 `control_space_parens`:
 In a control structure expression, is there a space after the opening parenthesis and a space before the closing parenthesis? `yes` = `if ( $expr )`, `no` = `if ($expr)`.
+
 在控制结构表达式中，左括号后面和右括号前面是否要有一个空格？yes = if ( $expr ), no = if ($expr).
 
 `blank_line_after_php`:
 Is there a blank line after the opening PHP tag?
+
 PHP的开始标签后面是否需要一个空行？
 
 `class_method_control_brace`:
 A summary of what line the opening braces go on for classes, methods, and control structures.
+
 左花括号在类，方法和控制结构中的位置。
 
 ### A.3. Survey Results
