@@ -20,8 +20,8 @@ interpreted as described in [RFC 2119].
 将在本节用来做一些解释性的描述。
 
 [RFC 2119]: http://www.ietf.org/rfc/rfc2119.txt
-[PSR-0]: https://github.com/tangrucheng/fig-standards-zh/blob/master/accepted/PSR-0.md
-[PSR-4]: https://github.com/tangrucheng/fig-standards-zh/blob/master/accepted/PSR-4-autoloader.md
+[PSR-0]: https://github.com/tangrucheng/fig-standards-zh/blob/master/PSR-0.md
+[PSR-4]: https://github.com/tangrucheng/fig-standards-zh/blob/master/PSR-4-autoloader.md
 
 
 1. Overview
@@ -113,7 +113,7 @@ reading from or writing to a file, and so on.
 
 副作用包含但不局限于：产生输出，显式地使用require或include，
 连接外部服务，修改ini配置，触发错误或异常，修改全局或者静态变量，
-读取或修改文件等等
+读取或修改文件等等。
 
 The following is an example of a file with both declarations and side effects;
 i.e, an example of what to avoid:
@@ -219,7 +219,7 @@ Class names MUST be declared in `StudlyCaps`.
 
 Code written for PHP 5.3 and after MUST use formal namespaces.
 
-PHP5.3之后的代码必须使用正式的命名空间.
+PHP5.3之后的代码必须使用正式的命名空间。
 
 For example:
 
